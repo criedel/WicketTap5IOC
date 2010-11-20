@@ -18,12 +18,6 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.tapestry</groupId>
-			<artifactId>tapestry-core</artifactId>
-			<version>${tapestry-release-version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket-ioc</artifactId>
 			<version>${wicket.version}</version>

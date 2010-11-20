@@ -2,7 +2,6 @@ package com.cupsoftware.tapestry.util;
 
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.tapestry5.ioc.RegistryBuilder;
 import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.HttpSessionStore;
 import org.apache.wicket.protocol.http.WebApplication;
@@ -10,9 +9,7 @@ import org.apache.wicket.protocol.http.WebResponse;
 import org.apache.wicket.session.ISessionStore;
 
 import com.cupsoftware.tapestry.TapestryApplication;
-import com.cupsoftware.tapestry.TapestryIOCInjector;
 import com.cupsoftware.tapestry.testapp.pages.TestHomePage;
-import com.cupsoftware.tapestry.testapp.services.WicketModule;
 
 /**
  * Dummy-Test-Application
