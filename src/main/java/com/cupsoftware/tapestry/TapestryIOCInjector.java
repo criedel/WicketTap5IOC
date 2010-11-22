@@ -4,7 +4,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 import org.apache.tapestry5.ioc.Registry;
-import org.apache.tapestry5.ioc.RegistryBuilder;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.ioc.annotations.InjectService;
 import org.apache.wicket.Component;
@@ -23,7 +22,7 @@ public class TapestryIOCInjector extends ConfigurableInjector implements ICompon
 
         this.registry = registry;
 
-        WebApplication app = registry.getService(TapestryApplication.class).getWebApplication();
+        WebApplication app = registry.getService(WebApplication.class);
         
         app.setMetaData(RegistryHolder.REGISTRY_KEY, new RegistryHolder(registry));
     }

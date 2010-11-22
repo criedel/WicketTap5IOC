@@ -8,7 +8,6 @@ import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.protocol.http.WebResponse;
 import org.apache.wicket.session.ISessionStore;
 
-import com.cupsoftware.tapestry.TapestryApplication;
 import com.cupsoftware.tapestry.testapp.pages.TestHomePage;
 
 /**
@@ -16,7 +15,7 @@ import com.cupsoftware.tapestry.testapp.pages.TestHomePage;
  * 
  * @author criedel
  */
-public class TapestryTestApplication extends WebApplication implements TapestryApplication {
+public class TapestryTestApplication extends WebApplication {
 
     private Class<? extends Page> homePage;
 
@@ -65,13 +64,4 @@ public class TapestryTestApplication extends WebApplication implements TapestryA
 
     }
     
-    @Override
-    public WebApplication getWebApplication() {
-        
-
-        return this;
-    }
-    
-    
-
 }
